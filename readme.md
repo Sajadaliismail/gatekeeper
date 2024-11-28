@@ -23,10 +23,10 @@ GateKeeper is a MERN stack application with Role-Based Access Control (RBAC). It
 - **POST /login**: Login a user and return a JWT token.
 - **POST /signup**: Register a new user.
 - **GET /**: Access for all users.
-- **POST /delete-user**: For Admins and Users to delete a user.
-- **POST /change-status**: For Admins and Moderators to change the ban status of a user.
-- **POST /edit-user**: For Users to edit their own data.
-- **POST /change-role**: For Admins to change a user's role.
+- **DELETE /delete-user**: For Admins and Users to delete a user.
+- **PATCH /change-status**: For Admins and Moderators to change the ban status of a user.
+- **PATCH /edit-user**: For Users to edit their own data.
+- **PATCH /change-role**: For Admins to change a user's role.
 
 ### How to Run the Application
 
@@ -76,9 +76,7 @@ GateKeeper is a MERN stack application with Role-Based Access Control (RBAC). It
 
 ### Deployment
 
-- **Backend** is deployed on **AWS**.
-- **Frontend** is deployed on **Vercel**.
-- **HTTPS** is enabled using **NGINX** to provide a secure protocol.
+- **APP** is deployed on **AWS**.
 
 ### Redux State Management
 
@@ -95,7 +93,7 @@ GateKeeper is a MERN stack application with Role-Based Access Control (RBAC). It
 - **Frontend**: React, Redux, Axios, TailwindCSS, Vercel
 - **Backend**: Node.js, Express, MongoDB, JWT, bcrypt, AWS, NGINX
 - **Middleware**: JWT Authentication, Role-Based Access Control (RBAC)
-- **Deployment**: AWS (Backend), Vercel (Frontend)
+- **Deployment**: AWS (Backend),
 
 ### Contributing
 
@@ -104,7 +102,3 @@ GateKeeper is a MERN stack application with Role-Based Access Control (RBAC). It
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
